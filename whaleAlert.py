@@ -41,22 +41,4 @@ class WhaleSearch():
 
 
 
-# {'blockchain': 'ethereum', 'symbol': 'ETH', 'id': '1636404313', 'transaction_type': 'transfer',
-# 'hash': 'feaec7e12c186db4439b788769d86701c4823490e274152ce329c44719e3cd4f',
-# 'from': {'address': '7aefd0b0681c27a4eceb0358e281580e859691ba', 'owner_type': 'unknown', 'owner': ''},
-# 'to': {'address': 'c098b2a3aa256d2140208c3de6543aaef5cd3a94', 'owner_type': 'unknown', 'owner': ''},
-# 'timestamp': 1624735044, 'amount': 565.9995, 'amount_usd': 1009703.4, 'transaction_count': 1}
-
-
-# success, transactions, status = whale.get_transactions(start_time, api_key=api_key, limit=transaction_count_limit)
-# x = transactions[1]
-# df = pd.DataFrame(transactions)
-# for transaction in transactions:
-#     if transaction['symbol'] == 'ETH':
-#         print(transaction)
-#         print("amount Of value ",transaction['amount'], "\n value in USD " , transaction['amount_usd'])
-#
-# df.to_sql('Whales', engine, if_exists='append')
-# prices_from_sql = pd.read_sql('Whales', engine)
-
 
