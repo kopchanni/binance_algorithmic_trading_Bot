@@ -4,18 +4,16 @@ from whalealert.whalealert import WhaleAlert
 whale = WhaleAlert()
 import time
 import datetime as dt
-import sqlite3
-import yfinance
-import sqlalchemy
+
 
 rest_base_url = 'https://api.whale-alert.io/v1'
 start_time = int(time.time() - 600)
-# start = dt.datetime(2019,1,1)
+
 end = dt.datetime.now()
 
 end_time = dt.datetime.now()
 transaction_count_limit = 10
-engine = sqlalchemy.create_engine('sqlite:///WhaleAlert.db')
+
 
 
 class WhaleSearch():
@@ -35,10 +33,3 @@ class WhaleSearch():
                 print(f"amount Of value {self.symbol} ", transaction['amount'], "\n value in USD ", transaction['amount_usd'],
                       "\n From ", owner1['owner_type'], " ", owner1['owner'],
                       "\nTo ", owner2['owner_type'], " ", owner2['owner'])
-
-
-
-
-
-
-
